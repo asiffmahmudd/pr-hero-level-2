@@ -44,6 +44,7 @@ app.get('/:userId/:subId', logger, (req, res) => {
 //   res.send('Hello developers!')
 // })
 app.get('/', logger, (req, res, next) => {
+    const something = "something";
     try {
         res.send(something);
     }

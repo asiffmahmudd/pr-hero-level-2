@@ -49,6 +49,7 @@ app.get('/:userId/:subId', logger, (req: Request, res: Response) => {
 //   res.send('Hello developers!')
 // })
 app.get('/', logger, (req: Request, res: Response, next: NextFunction) => {
+  const something = "something"
   try {
     res.send(something);
   } catch (error) {
